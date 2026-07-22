@@ -104,6 +104,7 @@ header p {
 }
 
 .title {
+    display: flex;
     flex-direction: column;
 }
 
@@ -730,6 +731,10 @@ footer {
         font-size: 18px;
     }
 
+    .header2 ul {
+        height: 100%;
+    }
+
     .header2 li {
         font-size: 6px;
     }
@@ -940,6 +945,11 @@ footer {
     margin-top: 15px;
 }
 
+.map {
+    float: none;
+        margin-right: 6%;
+    }
+
     .add p {
         margin-top: 3%;
         font-size: 6px;
@@ -948,6 +958,9 @@ footer {
 
     .calendar {
     margin-top: 6px;
+     width: 110px;
+    height: 88px;
+    overflow: hidden;
 }
 
 
@@ -961,9 +974,11 @@ footer {
     }
 
     .calendar-iframe {
-        width: 119px;
-        height: 87px;
-    }
+    width: 439px;
+    height: 352px;
+    transform: scale(0.25);
+    transform-origin: top left;
+}
 
     footer {
         height: 38px;
