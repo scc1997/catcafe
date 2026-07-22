@@ -13,7 +13,7 @@ img {
     vertical-align: bottom;
 }
 
-.ip-only {
+.ip-only, .sp-only {
     display: none;
 }
 
@@ -487,6 +487,10 @@ footer {
         display: block;
     }
 
+    .sp-only {
+        display: none;
+    }
+
     h1 {
         margin-top: 4px;
         font-size: 36px;
@@ -691,7 +695,7 @@ footer {
 
 @media (max-width: 767px) {
 
-   .ip-only {
+   .ip-only, .sp-only {
         display: block;
     }
 
