@@ -1,0 +1,974 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #301900;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+.ip-only {
+    display: none;
+}
+
+.mainvisual {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    background-color: #C7BEAC;
+    height: 100px;
+}
+
+.header1 {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+.mainvisual {
+    display: block;
+    margin: 0 auto;
+}
+
+.title,
+.header2,
+.notes-section h2,
+.cats-section h2 {
+    font-family: "LINE Seed JP", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.cat p {
+    font-family: "LINE Seed JP", sans-serif;
+    font-weight: light;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 48px;
+    margin-top: -8px;
+}
+
+.about-section h2,
+.menu-section h2,
+.access-section h2 {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 64px;
+}
+
+.about-section p,
+.notes-box {
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: light;
+    font-style: normal;
+}
+
+.notes-text-01 p,
+.notes-text-02,
+.priceanddrink,
+li,
+.add {
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.notes-section h2,
+.cats-section h2 {
+    font-size: 48px;
+}
+
+header p {
+    letter-spacing: 49%;
+    font-size: 20px;
+}
+
+.header1-left {
+    display: flex;
+}
+
+.title {
+    flex-direction: column;
+}
+
+.icon {
+    display: flex;
+    margin-left: auto;
+    gap: 24%;
+    padding-right: 9%;
+}
+
+.header2 {
+    background-color: #C7BEAC;
+}
+
+.header2 ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100px;
+}
+
+.header2 li {
+    list-style: none;
+    font-size: 14px;
+}
+
+.about-section {
+    background-image: url(image/2V_background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1024px;
+    text-align: center;
+}
+
+.about-section h2 {
+    padding-top: 6%;
+}
+
+.about-section p {
+    font-size: 16px;
+}
+
+.textbox {
+    height: 360px;
+    width: 1036px;
+    display: inline-block;
+    text-align: left;
+}
+
+
+.notes-section {
+    height: 1024px;
+    background-color: #C7BEAC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notes-text-01 {
+    margin-left: 3.5%;
+}
+
+.notes-text-01 p {
+    margin-top: 21px;
+    margin-bottom: 21px;
+}
+
+.notes-pic01 {
+    position: absolute;
+    top: 6%;
+    right: 12%;
+}
+
+.notes {
+    height: 889px;
+    width: 1237px;
+    background-image: linear-gradient(#ffffff, #fdf3dd 53%);
+    border: 1px solid #301900;
+    border-radius: 20px;
+    padding: 6%;
+    position: relative;
+}
+
+.notes-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.notes-box {
+    height: 350px;
+    width: 300px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    border: 1px solid #301900;
+    padding-top: 24px;
+}
+
+.notebox-img02 {
+    display: inline-block;
+    margin-top: 12px;
+}
+
+.notebox-img03 {
+    display: inline-block;
+    margin-top: 32px;
+}
+
+.notes-box p {
+    display: inline-block;
+    text-align: left;
+}
+
+.notes-box-p2 {
+    margin-top: 30px;
+}
+
+.notes-box-p3 {
+    margin-top: 44px;
+}
+
+.notes-text-02 {
+    text-align: right;
+    margin-top: 32px;
+    margin-right: 32px;
+}
+
+.notes-pic05 {
+    float: left;
+    margin-top: 21px;
+    margin-left: 9%;
+}
+
+.cats-section {
+    height: 1024px;
+    background-image: url(image/肉球.png), linear-gradient(#C7BEAC, #ffffff);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.cats-section h2 {
+    padding-top: 6%;
+}
+
+.cats {
+    margin-top: 3%;
+}
+
+.cats_line01,
+.cats_line02,
+.cats_line03,
+.cats_line04 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.cats_line02,
+.cats_line04 {
+    margin-top: 3%;
+}
+
+.menu-section {
+    padding-top: 3%;
+    height: 1024px;
+    background-color: #FFFFFF;
+    text-align: center;
+    display: flex;
+}
+
+.menu {
+    border: 1px solid #301900;
+    border-radius: 20px;
+    height: 889px;
+    width: 1237px;
+    background-color: #C7BEAC;
+    margin: 0 auto;
+}
+
+.priceanddrink {
+    font-size: 32px;
+}
+
+.price-table {
+    border: 1px solid #301900;
+    border-radius: 20px;
+    height: 686px;
+    width: 1083.34px;
+    background-color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 42px;
+    position: relative;
+}
+
+table {
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    border-collapse: collapse;
+    border-radius: 20px;
+    height: 177.64px;
+    width: 960.63px;
+    background-color: #C7BEAC;
+    margin-top: 21px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th,
+td {
+    font-size: 24px;
+    border: 1px solid #FFFFFF;
+}
+
+.tax {
+    text-align: right;
+    margin-right: 6%;
+    font-size: 15px;
+}
+
+.menu li,
+.drink-table p {
+    font-size: 20px;
+}
+
+.drink {
+    margin-top: 21px;
+}
+
+.drink-table p {
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.drink-table {
+    height: 240px;
+    width: 960px;
+    background-color: #C7BEAC;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 21px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hotandice {
+    height: 201px;
+    width: 619px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding-top: 15px;
+}
+
+.drink-ul {
+    column-gap: 8em;
+    column-count: 2;
+}
+
+.drink li {
+    list-style: none;
+    text-align: left;
+    margin-left: 24px;
+    padding-top: 6px;
+}
+
+.ice {
+    height: 201px;
+    width: 253px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding-top: 15px;
+}
+
+.menu-img {
+    position: absolute;
+    top: 50.5%;
+    left: 77.5%;
+}
+
+
+.access-section {
+    padding-top: 3%;
+    height: 924px;
+    background-image: linear-gradient(#ffffff, #C7BEAC);
+}
+
+.accessandschedule {
+    height: 789px;
+    width: 1237px;
+    background-color: #C7BEAC;
+    border: solid 1px #301900;
+    border-radius: 20px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.access-section h2 {
+    text-align: center;
+    margin-top: 21px;
+}
+
+.pic06 {
+    float: left;
+    position: absolute;
+    top: 9px;
+    left: 10%;
+}
+
+.mapandcalendar {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.map {
+    float: left;
+    margin-right: 6%;
+}
+
+.add-calendar {
+    flex-direction: column;
+}
+
+.calendar {
+    margin-top: 21px;
+}
+
+.access-section p {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.addp-space {
+    letter-spacing: 6%;
+}
+
+iframe {
+    border-radius: 20px;
+}
+
+.map-iframe {
+    width:550px;
+    height:554px;
+}
+
+.calendar-iframe {
+width:439px;
+ height: 352px;
+}
+
+.notes,
+.menu,
+.accessandschedule,
+iframe {
+    box-shadow: 0px 4px 10px #301900;
+}
+
+footer {
+    height: 100px;
+    background-color: #C7BEAC;
+    border-top: 1px solid #301900;
+    text-align: center;
+    padding-top: 40px;
+}
+
+@media (min-width:768px) and (max-width: 1024px) {
+
+    .ip-only {
+        display: block;
+    }
+
+    h1 {
+        margin-top: 4px;
+        font-size: 36px;
+    }
+
+    header p {
+        letter-spacing: 10%;
+    }
+
+    .about-section h2,
+    .menu-section h2,
+    .access-section h2 {
+        font-size: 48px;
+    }
+
+    .notes-section h2,
+    .cats-section h2 {
+        font-size: 36px;
+    }
+
+    .header2 li {
+        font-size: 12px;
+    }
+
+    .about-section {
+        height: 960px;
+    }
+
+    .about-section p {
+        font-size: 14px;
+    }
+
+    .textbox {
+        width: 680px;
+    }
+
+    .notes {
+        height: 840px;
+        width: 800px;
+        padding-top: 10%;
+    }
+
+    .notes-text-01 p,
+    .notes-text-02 {
+        font-size: 14px;
+    }
+
+    .notes-box {
+        height: 280px;
+        width: 200px;
+    }
+
+    .notes-box p {
+        font-size: 12px;
+    }
+
+    .notebox-img01 img {
+        width: 180px;
+        height: auto;
+    }
+
+    .notebox-img02 img {
+        width: 160px;
+        height: auto;
+    }
+
+    .notebox-img03 img {
+        width: 212px;
+        height: auto;
+    }
+
+    .notes-box-p2 {
+        margin-top: 17px;
+    }
+
+    .notes-box-p3 {
+        margin-top: 40px;
+    }
+
+    .notes-pic01 {
+        width: 180px;
+        height: auto;
+        top: 14%;
+        right: 12%;
+    }
+
+    .notes-pic05 {
+        width: 150px;
+        height: auto;
+        margin-top: 13%;
+    }
+
+    .cats-section {
+        height: 660px;
+    }
+
+    .cats img {
+        width: 170px;
+        height: auto;
+    }
+
+    .cats p {
+        font-size: 12px;
+    }
+
+    .menu-section {
+        height: 840px;
+        padding-top: 10%;
+    }
+
+    .menu,
+    .accessandschedule {
+        width: 800px;
+        height: 680px;
+    }
+
+    .price-table {
+        width: 660px;
+        height: 520px;
+    }
+
+    table {
+        height: 123px;
+        width: 580px;
+    }
+
+    .drink-table {
+        height: 200px;
+        width: 580px;
+    }
+
+    .hotandice {
+        height: 170px;
+        width: 321px;
+    }
+
+    .ice {
+        height: 170px;
+        width: 192px;
+    }
+
+    th,
+    td {
+        font-size: 18px;
+    }
+
+    .priceanddrink {
+        font-size: 21px;
+    }
+
+    .tax {
+        text-align: right;
+        margin-right: 8%;
+        font-size: 10px;
+    }
+
+    .menu li,
+    .drink-table p {
+        font-size: 14px;
+    }
+
+    .menu-img {
+        width: 200px;
+        height: auto;
+        top: 63%;
+        left: 80%;
+    }
+
+    .drink-ul {
+        column-gap: 0.1em;
+    }
+
+    .drink li {
+        margin-left: 12px;
+    }
+
+    .access-section {
+        height: 800px;
+    }
+
+    .pic06 {
+        top: 4%;
+        height: 98px;
+        width: auto;
+    }
+
+    .add p {
+        margin-top: 4.5%;
+        font-size: 14px;
+    }
+
+    .map-iframe {
+        width: 360px;
+        height: 456px;
+    }
+
+    .calendar-iframe {
+        width: 312px;
+        height: 288px;
+    }
+}
+
+@media (max-width: 767px) {
+
+   .ip-only {
+        display: block;
+    }
+
+    h1 {
+        margin-top: 4px;
+        font-size: 15px;
+    }
+
+    header, .header2 {
+        height:38px;
+    }
+
+    header p {
+        font-size: 6px;
+        letter-spacing: 52%;
+    }
+
+    .logo {
+        margin-left: 6px;
+        height: 30px;
+        width: auto;
+    }
+
+    .icon img {
+        height: 15px;
+        width: auto;
+    }
+
+    .about-section h2,
+    .menu-section h2,
+    .access-section h2 {
+        font-size: 21px;
+    }
+
+    .notes-section h2,
+    .cats-section h2 {
+        font-size: 18px;
+    }
+
+    .header2 li {
+        font-size: 6px;
+    }
+
+    .about-section {
+        background-image: url(image/V2_background_sp.png);
+        height: 428px;
+    }
+
+    .about-section p {
+        font-size: 8px;
+    }
+
+    .textbox {
+        width: 364px;
+    }
+
+    .notes-section {
+        height: 506px;
+    }
+
+    .notes {
+        height: 388px;
+        width: 327px;
+        border: 0.6px;
+        border-radius: 6px;
+        padding: 4%;
+    }
+
+    .notes-text-01 p,
+    .notes-text-02 {
+        font-size: 8px;
+        font-weight: normal;
+    }
+
+    .notes-box {
+        height: 100px;
+        width: 80px;
+        border: 0.6px;
+        border-radius: 6px;
+        padding-top: 0px;
+    }
+
+    .notes-box p {
+        font-size: 5px;
+    }
+
+    .notebox-img01 img {
+        width: 52px;
+        height: auto;
+        margin-top: 12px;
+        margin-bottom: 6px;
+    }
+
+    .notebox-img02 img {
+        width: 52px;
+        height: auto;
+        margin-top: 1px;
+    }
+
+    .notebox-img03 img {
+        width: 70px;
+        height: auto;
+        margin-top: -18px;
+    }
+
+    .notes-box-p2 {
+        margin-top: 6px;
+    }
+
+    .notes-box-p3 {
+        margin-top: 21px;
+    }
+
+    .notes-pic01 {
+        width: 53px;
+        height: auto;
+        top: 14%;
+        right: 12%;
+    }
+
+    .notes-pic05 {
+        width: 50px;
+        height: auto;
+        margin-top: 30%;
+        margin-left:1%;
+    }
+
+    .cats-section {
+        height: 270px;
+    }
+
+    .cats img {
+        width: 67px;
+        height: auto;
+    }
+
+    .cats p {
+        font-size: 6px;
+    }
+
+    .menu-section {
+        height: 333px;
+        padding-top: 10%;
+    }
+
+    .menu,
+    .accessandschedule {
+        width: 335px;
+        height: 246px;
+        border: 0.6px;
+        border-radius: 6px;
+    }
+
+    .price-table {
+        width: 291px;
+        height: 185px;
+        border: 6px;
+        border-radius: 6px;
+        padding-top: 8px;
+    }
+
+    table {
+        height: 48px;
+        width: 259px;
+        border: 0.6px;
+        border-radius: 4px;
+        margin-top: 5px;
+    }
+
+    .drink {
+        margin-top: 5px;
+    }
+
+    .drink-table {
+        height: 65px;
+        width: 259px;
+        border-radius: 6px;
+        margin-top: 5px;
+    }
+
+    .hotandice {
+        height: 54px;
+        width: 167px;
+        border-radius: 6px;
+        padding-top: 2.5px;
+    }
+
+    .ice {
+        height: 54px;
+        width: 70px;
+        border-radius: 6px;
+        padding-top: 2.5px;
+    }
+
+    th,
+    td {
+        font-size: 6px;
+    }
+
+    .priceanddrink {
+        font-size: 10px;
+    }
+
+    .tax {
+        text-align: right;
+        margin-right: 8%;
+        font-size: 4px;
+    }
+
+    .menu li,
+    .drink-table p {
+        font-size: 6px;
+    }
+
+    .menu-img {
+        width: 68px;
+        height: auto;
+        top: 63%;
+        left: 84%;
+    }
+
+    .drink-ul {
+        column-gap: 0.1em;
+    }
+
+    .drink li {
+        margin-left: 12px;
+        line-height: 3px;
+    }
+
+    .access-section {
+        padding-top: 1%;
+        height: 295px;
+    }
+
+    .pic06 {
+        top: 6%;
+        height: 37px;
+        width: auto;
+    }
+
+    .accessandschedule {
+        padding-top: 0.1px;
+    }
+
+    .mapandcalendar {
+    margin-top: 15px;
+}
+
+    .add p {
+        margin-top: 3%;
+        font-size: 6px;
+        line-height: 0px;
+    }
+
+    .calendar {
+    margin-top: 6px;
+}
+
+
+    iframe {
+        border-radius: 6px;
+    }
+
+    .map-iframe {
+        width: 148px;
+        height: 141px;
+    }
+
+    .calendar-iframe {
+        width: 119px;
+        height: 87px;
+    }
+
+    footer {
+        height: 38px;
+       border-top: 1px solid #301900;
+    padding-top: 12px;
+    font-size: 5px;
+    }
+}
